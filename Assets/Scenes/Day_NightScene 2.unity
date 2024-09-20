@@ -154,7 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hora: 12
   Sol: {fileID: 1005147941}
-  Luna: {fileID: 771414707}
   velocidadTransicion: 1
 --- !u!4 &39253415
 Transform:
@@ -170,6 +169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1005147941}
+  - {fileID: 771414707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636074256
@@ -293,7 +293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &771414707
 Transform:
   m_ObjectHideFlags: 0
@@ -302,12 +302,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771414706}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -2.38, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 26.9, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 39253415}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &771414708
 Light:
@@ -320,8 +320,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.74165183, g: 0.87894505, b: 0.94716984, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 0.6039216, g: 0.92941177, b: 1, a: 0.654902}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -353,7 +353,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -882,5 +882,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 799925720}
   - {fileID: 39253415}
-  - {fileID: 771414707}
   - {fileID: 923301001}
